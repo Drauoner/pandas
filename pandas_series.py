@@ -41,3 +41,14 @@ print(grades.dtype)
 
 #
 print(grades.values)
+
+
+# Series of Strings
+hardware = pd.Series(["Hammer", "Saw", "Wrench"])
+print(hardware)
+
+# calling string methods apply to each element
+print(hardware.str.contains("a"))
+
+hardware_upper = hardware.str.upper()
+print(hardware_upper)
